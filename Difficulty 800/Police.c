@@ -11,12 +11,8 @@ int main(){
         if(p[i]<0 && mp==0){
             c++;
         }
-        if(p[i]>0 && p[i]+p[i+1]==0){
-            i++;
-        }
-        if(p[i]>0 && p[i]+p[i+1]!=0){
-            mp = mp+p[i];
-            i++;
+        if(p[i]>0){
+            mp+=p[i];
         }
         if(p[i]<0 && mp!=0){
             mp--;
